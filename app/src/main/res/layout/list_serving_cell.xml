@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtAdpTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.16"
+        android:background="@drawable/border"
+        android:text="Time" android:textColor="#fff"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/txtAdpLac"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.12"
+        android:background="@drawable/border"
+        android:text="Time"
+        android:textColor="#fff"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/txtAdpNode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.12"
+        android:background="@drawable/border"
+        android:text="Time" android:textColor="#fff"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/txtAdpCellID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.12"
+        android:background="@drawable/border"
+        android:text="Time" android:textColor="#fff"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/txtAdpLevel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.12"
+        android:background="@drawable/border"
+        android:text="Time" android:textColor="#fff"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/txtAdpQual"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.12"
+        android:background="@drawable/border"
+        android:text="Time" android:textColor="#fff"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/txtAdpMode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.12"
+        android:background="@drawable/border"
+        android:text="Time" android:textColor="#fff"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/txtAdpSrvTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.12"
+        android:background="@drawable/border"
+        android:text="Time" android:textColor="#fff"
+        android:textAlignment="center" />
+</LinearLayout>

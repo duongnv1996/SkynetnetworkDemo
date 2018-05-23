@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#cac9c9"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvwTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:padding="5dp"
+            android:background="#7e7d7d"
+            android:text="OPERATOR: Skynet Network Demo"
+            android:textAlignment="center" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ff909090" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff909090"
+            android:gravity="center"
+            android:stretchColumns="*">
+
+            <TableRow android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_column="0"
+                    android:layout_span="3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name: " />
+
+                    <TextView
+                        android:id="@+id/txtCellName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow  >
+
+                <LinearLayout android:layout_column="0"             android:paddingLeft="8dp"
+                   >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MCC: " />
+
+                    <TextView
+                        android:id="@+id/txtMCC"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_column="1"
+                    android:paddingStart="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MNC: " />
+
+                    <TextView
+                        android:id="@+id/txtMNC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <LinearLayout   android:paddingStart="8dp" android:layout_column="2">
+
+                    <TextView
+                        android:id="@+id/txtLacTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LAC: " />
+
+                    <TextView
+                        android:id="@+id/txtLAC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow  android:paddingStart="8dp">
+
+                <LinearLayout android:layout_column="0">
+
+                    <TextView
+                        android:id="@+id/txtNodeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Node: " />
+
+                    <TextView
+                        android:id="@+id/txtNode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_column="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cell ID: " />
+
+                    <TextView
+                        android:id="@+id/txtCellID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_column="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Type: " />
+
+                    <TextView
+                        android:id="@+id/txtType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </TableRow>
+            <TableRow  android:paddingStart="8dp">
+
+                <LinearLayout android:layout_column="0">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mode: " />
+
+                    <TextView
+                        android:id="@+id/txtNetworkMode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_column="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Azimuth: " />
+
+                    <TextView
+                        android:id="@+id/txtAzimuth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_column="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tilt: " />
+
+                    <TextView
+                        android:id="@+id/txtTilt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow  android:paddingStart="8dp">
+
+                <LinearLayout android:layout_column="0">
+
+                    <TextView
+                        android:id="@+id/txtLevelTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Level: " />
+
+                    <TextView
+                        android:id="@+id/txtLevel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_column="1">
+
+                    <TextView
+                        android:id="@+id/txtQualTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Qual: " />
+
+                    <TextView
+                        android:id="@+id/txtQual"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_column="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SNR: " />
+
+                    <TextView
+                        android:id="@+id/txtSNR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </TableRow>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#ff909090" />
+
+            <TableRow     android:paddingStart="8dp"         android:background="#cac9c9"
+                >
+
+                <LinearLayout android:layout_column="0">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Height: " />
+
+                    <TextView
+                        android:id="@+id/txtHeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_column="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Altitude: " />
+
+                    <TextView
+                        android:id="@+id/txtAltitude"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_column="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ground: " />
+
+                    <TextView
+                        android:id="@+id/txtGround"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow  android:paddingStart="8dp" android:background="#cac9c9">
+
+                <LinearLayout android:layout_column="0">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Speed: " />
+
+                    <TextView
+                        android:id="@+id/txtSpeed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_column="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location: " />
+
+                    <TextView
+                        android:id="@+id/txtLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_column="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Accuracy: " />
+
+                    <TextView
+                        android:id="@+id/txtNWAccuracy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#cac9c9"  android:paddingStart="8dp"
+            android:stretchColumns="*">
+
+            <TableRow  >
+
+                <LinearLayout android:layout_column="0">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Longitude: " />
+
+                    <TextView
+                        android:id="@+id/txtLongitude"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_column="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Latitude: " />
+
+                    <TextView
+                        android:id="@+id/txtLatitudes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ff909090" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff909090"
+            android:paddingStart="8dp"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <LinearLayout android:layout_column="0">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UL: " />
+
+                    <TextView
+                        android:id="@+id/txtULHttp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_column="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DL: " />
+
+                    <TextView
+                        android:id="@+id/txtDLHttp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <LinearLayout android:layout_column="0">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Data: " />
+
+                    <TextView
+                        android:id="@+id/txtData"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_column="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="State: " />
+
+                    <TextView
+                        android:id="@+id/txtState"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ff909090" />
+
+        <TextView
+            android:id="@+id/txtServingTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Serving time "
+            android:background="#cac9c9"
+            android:textAlignment="center" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ff909090" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#cac9c9"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.16"
+                android:text="Time"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.12"
+                android:text="LAC"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.12"
+                android:text="Node"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.12"
+                android:text="CellId"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.12"
+                android:text="Level"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.12"
+                android:text="Qual"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.12"
+                android:text="Type"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.12"
+                android:text="Serv,s"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/servingCellHistory"
+            android:background="#cac9c9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</FrameLayout>
