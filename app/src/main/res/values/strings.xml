@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Skynet Network Demo</string>
+    <string name="app_name">Network Demo</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
